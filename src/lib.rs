@@ -5,7 +5,7 @@
 use core::iter;
 
 #[cfg(not(feature = "sinsemilla_table"))]
-use group::Curve;
+use pasta_curves::group::Curve;
 //use group::Wnaf;
 use pasta_curves::arithmetic::{CurveAffine, CurveExt};
 use pasta_curves::pallas;
