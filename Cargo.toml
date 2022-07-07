@@ -13,7 +13,7 @@ subtle = { version = "2.3", default-features = false }
 #pasta_curves = { path = "/home/agi/code/pasta_curves", default-features = false }
 [dependencies.pasta_curves]
 git = "https://github.com/jarys/pasta_curves"
-branch = "unboxed_closures"
+branch = "unboxed-closures"
 default-features = false
 features = ["unboxed_closures"]
 
