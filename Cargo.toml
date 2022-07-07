@@ -6,9 +6,16 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-pasta_curves = { version = "0.3", default-features=false, features=["alloc"] }
 group = { version = "0.11", default-features = false }
 subtle = { version = "2.3", default-features = false }
+
+#pasta_curves = { version = "0.3", default-features=false, features=["alloc"] }
+#pasta_curves = { path = "/home/agi/code/pasta_curves", default-features = false }
+[dependencies.pasta_curves]
+git = "https://github.com/jarys/pasta_curves"
+branch = "unboxed_closures"
+default-features = false
+features = ["unboxed_closures"]
 
 [features]
 default = ["precomputed-table"]
